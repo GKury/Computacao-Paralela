@@ -1,0 +1,23 @@
+Decomposição de tarefas
+Nota* Os códigos gerados até agora ficaram muito simples. Portanto pretendo refazer ambas as versões do código (serial e paralela) e um novo PDF como esse, para a versão final do código paralelo.
+
+
+1.	Quais são as tarefas no caminho crítico para cada grafo de dependência? Para responder a pergunta, apresente um DAG do seu projeto.
+
+Como o código atual é paralelizado em duas threads de forma “simétrica”, os dois caminhos são iguais, e portanto, o caminho crítico. As tarefas são as seguintes: 1 – Inicialização de variáveis e das threads. 2/3 – Thread calculando metade dos dados. 4 – União dos resultados das threads para resultado final e output.
+
+
+2.	Qual é o limite inferior do tempo de execução paralela para cada decomposição?
+3
+
+
+3.	Quantos processadores são necessários para se conseguir o tempo mínimo de execução?
+Como apenas duas threads são utilizadas, apenas dois processadores são necessários para se conseguir o tempo mínimo de execução.
+
+
+4.	Qual é o grau máximo de concorrência?
+O grau máximo de concorrência é dois.
+
+
+5.	Qual é o paralelismo médio?
+50%
