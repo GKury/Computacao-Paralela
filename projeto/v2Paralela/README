@@ -4,6 +4,8 @@ Nota* Os códigos gerados até agora ficaram muito simples. Portanto pretendo re
 
 1.	Quais são as tarefas no caminho crítico para cada grafo de dependência? Para responder a pergunta, apresente um DAG do seu projeto.
 
+https://github.com/GKury/Computacao-Paralela/blob/39cf1c760113483b94f97d47e7e4f63c9fc2b7d1/projeto/v2Paralela/DGA.png
+
 Como o código atual é paralelizado em duas threads de forma “simétrica”, os dois caminhos são iguais, e portanto, o caminho crítico. As tarefas são as seguintes: 1 – Inicialização de variáveis e das threads. 2/3 – Thread calculando metade dos dados. 4 – União dos resultados das threads para resultado final e output.
 
 
